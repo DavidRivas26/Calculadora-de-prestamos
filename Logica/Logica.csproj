@@ -3,12 +3,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>Ejercicio_8</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\LogicLayer\Logica.csproj" />
-  </ItemGroup>
 
 </Project>

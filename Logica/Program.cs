@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Ejercicio_8
+namespace Logica
 {
     static class Program
     {
@@ -17,7 +17,7 @@ namespace Ejercicio_8
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormCalculadora());
+            Application.Run(new Form1());
         }
     }
 }

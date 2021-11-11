@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Ejercicio_8.RecursosInterfaz;
+using Logica;
 
 namespace Ejercicio_8
 {
@@ -22,6 +23,11 @@ namespace Ejercicio_8
         {
             CargarCbxPrestamo();
             CargarCbxMeses();
+        }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+            Validacion();
         }
 
         public void CargarCbxPrestamo() { 
@@ -50,6 +56,12 @@ namespace Ejercicio_8
             Valor = 3
         };
 
+            cbxPrestamo.Items.Add(OpcionDefecto);
+            cbxPrestamo.Items.Add(OpcionPersonal);
+            cbxPrestamo.Items.Add(OpcionAutomovil);
+            cbxPrestamo.Items.Add(OpcionHipotecario);
+            cbxPrestamo.SelectedItem = OpcionDefecto;
+
         }
 
         public void CargarCbxMeses() 
@@ -61,21 +73,72 @@ namespace Ejercicio_8
                 Valor = null
             };
 
-            int f = 0;
+            int meses = 0;
+
+            cbxMeses.Items.Add(OpcionDefecto);
+            cbxMeses.SelectedItem = OpcionDefecto;
 
             for (int i = 12; i <= 120; i += 6)
             {
 
-                f++;
+                meses++;
 
                 CbxMeses Opciones = new CbxMeses
                 {
-                    Texto = i + "Meses",
-                    Valor = f
+                    Texto = i + " Meses",
+                    Valor = meses
                 };
 
+                cbxMeses.Items.Add(Opciones);
+
             }
+
         }
+
+        public void Validacion()
+        {
+
+            try
+            {
+
+                CbxPrestamo PrestamoSeleccionado = cbxPrestamo.SelectedItem as CbxPrestamo;
+                CbxMeses MesSeleccionado = cbxMeses.SelectedItem as CbxMeses;
+
+                if (PrestamoSeleccionado.Valor == null)
+                {
+                    MessageBox.Show("Debe seleccionar el tipo de prestamo", "Error");
+                }
+
+                else if (MesSeleccionado.Valor == null)
+                {
+                    MessageBox.Show("Debe seleccionar la cantidad de meses", "Error");
+                }
+
+                else if (string.IsNullOrEmpty(txtMonto.Text))
+                {
+                    MessageBox.Show("Debe ingresar un monto", "Error");
+                }
+
+                else
+                {
+
+                    Calcular calcular = new Calcular();
+
+                    double monto = Convert.ToDouble(txtMonto.Text);
+                    int meses = (int)MesSeleccionado.Valor; 
+                    int prestamo = (int)PrestamoSeleccionado.Valor;
+                    txtResultado.Text = Convert.ToString(calcular.Operacion(prestamo, meses, monto));
+
+                }
+
+            }
+            catch(Exception e)
+            {
+                MessageBox.Show("Solo se aceptan numeros", "Error");
+            }
+
+        }
+
 
     }
 }

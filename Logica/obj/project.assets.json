@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {
-      "Logica/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "compile": {
-          "bin/placeholder/Logica.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Logica.dll": {}
-        }
-      }
-    }
+    ".NETCoreApp,Version=v3.1": {}
   },
-  "libraries": {
-    "Logica/1.0.0": {
-      "type": "project",
-      "path": "../LogicLayer/Logica.csproj",
-      "msbuildProject": "../LogicLayer/Logica.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": [
-      "Logica >= 1.0.0"
-    ]
+    ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
     "C:\\Users\\rafae\\.nuget\\packages\\": {}
@@ -32,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rafae\\source\\repos\\Ejercicio 8\\Ejercicio 8\\Ejercicio 8.csproj",
-      "projectName": "Ejercicio 8",
-      "projectPath": "C:\\Users\\rafae\\source\\repos\\Ejercicio 8\\Ejercicio 8\\Ejercicio 8.csproj",
+      "projectUniqueName": "C:\\Users\\rafae\\source\\repos\\Ejercicio 8\\Logica\\Logica.csproj",
+      "projectName": "Logica",
+      "projectPath": "C:\\Users\\rafae\\source\\repos\\Ejercicio 8\\Logica\\Logica.csproj",
       "packagesPath": "C:\\Users\\rafae\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rafae\\source\\repos\\Ejercicio 8\\Ejercicio 8\\obj\\",
+      "outputPath": "C:\\Users\\rafae\\source\\repos\\Ejercicio 8\\Logica\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rafae\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,11 +33,7 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {
-            "C:\\Users\\rafae\\source\\repos\\Ejercicio 8\\LogicLayer\\Logica.csproj": {
-              "projectPath": "C:\\Users\\rafae\\source\\repos\\Ejercicio 8\\LogicLayer\\Logica.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
