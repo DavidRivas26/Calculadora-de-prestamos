@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\rafae\\source\\repos\\Ejercicio 8\\LogicLayer\\Logica.csproj": {
-                "projectPath": "C:\\Users\\rafae\\source\\repos\\Ejercicio 8\\LogicLayer\\Logica.csproj"
+              "C:\\Users\\rafae\\source\\repos\\Ejercicio 8\\Logica\\Logica.csproj": {
+                "projectPath": "C:\\Users\\rafae\\source\\repos\\Ejercicio 8\\Logica\\Logica.csproj"
               }
             }
           }
@@ -65,14 +65,14 @@
         }
       }
     },
-    "C:\\Users\\rafae\\source\\repos\\Ejercicio 8\\LogicLayer\\Logica.csproj": {
+    "C:\\Users\\rafae\\source\\repos\\Ejercicio 8\\Logica\\Logica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rafae\\source\\repos\\Ejercicio 8\\LogicLayer\\Logica.csproj",
+        "projectUniqueName": "C:\\Users\\rafae\\source\\repos\\Ejercicio 8\\Logica\\Logica.csproj",
         "projectName": "Logica",
-        "projectPath": "C:\\Users\\rafae\\source\\repos\\Ejercicio 8\\LogicLayer\\Logica.csproj",
+        "projectPath": "C:\\Users\\rafae\\source\\repos\\Ejercicio 8\\Logica\\Logica.csproj",
         "packagesPath": "C:\\Users\\rafae\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rafae\\source\\repos\\Ejercicio 8\\LogicLayer\\obj\\",
+        "outputPath": "C:\\Users\\rafae\\source\\repos\\Ejercicio 8\\Logica\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rafae\\AppData\\Roaming\\NuGet\\NuGet.Config",

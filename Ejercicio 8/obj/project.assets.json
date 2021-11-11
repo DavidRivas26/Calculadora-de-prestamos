@@ -17,8 +17,8 @@
   "libraries": {
     "Logica/1.0.0": {
       "type": "project",
-      "path": "../LogicLayer/Logica.csproj",
-      "msbuildProject": "../LogicLayer/Logica.csproj"
+      "path": "../Logica/Logica.csproj",
+      "msbuildProject": "../Logica/Logica.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -53,8 +53,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\rafae\\source\\repos\\Ejercicio 8\\LogicLayer\\Logica.csproj": {
-              "projectPath": "C:\\Users\\rafae\\source\\repos\\Ejercicio 8\\LogicLayer\\Logica.csproj"
+            "C:\\Users\\rafae\\source\\repos\\Ejercicio 8\\Logica\\Logica.csproj": {
+              "projectPath": "C:\\Users\\rafae\\source\\repos\\Ejercicio 8\\Logica\\Logica.csproj"
             }
           }
         }

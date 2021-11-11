@@ -15,7 +15,7 @@ namespace Logica
             {
                 case (int)OpcionesPrestamo.Personal:
 
-                    switch (meses) 
+                    switch (meses)
                     {
 
                         case (int)OpcionesMeses.Mes12:
@@ -265,7 +265,7 @@ namespace Logica
                     {
 
                         case (int)OpcionesMeses.Mes12:
-                            
+
                             interes = monto * 0.08;
                             devolucion = (monto + interes) / 12;
 
@@ -387,6 +387,7 @@ namespace Logica
             return devolucion;
 
         }
+
 
     }
 }
